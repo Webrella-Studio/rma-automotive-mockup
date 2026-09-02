@@ -27,20 +27,20 @@
 .car-console:after{content:"RMA / AUTO CARE";position:absolute;right:20px;bottom:18px;color:#5f5f68;font-family:"Oswald",sans-serif;font-size:9px;letter-spacing:.16em}
 .car-scan{position:absolute;left:8%;right:8%;top:14%;height:1px;background:linear-gradient(90deg,transparent,var(--red),transparent);box-shadow:0 0 16px rgba(225,29,46,.45);opacity:.55;animation:scanCar 5.5s ease-in-out infinite;pointer-events:none}
 @keyframes scanCar{0%,100%{transform:translateY(0);opacity:.2}50%{transform:translateY(275px);opacity:.7}}
-.car-svg{position:absolute;inset:54px 38px 42px;width:calc(100% - 76px);height:calc(100% - 96px);filter:drop-shadow(0 0 16px rgba(225,29,46,.08))}
-.car-svg .car-body{fill:none;stroke:rgba(240,240,245,.78);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.car-svg{position:absolute;inset:54px 26px 40px;width:calc(100% - 52px);height:calc(100% - 94px);filter:drop-shadow(0 0 18px rgba(225,29,46,.07))}
+.car-svg .car-body{fill:none;stroke:rgba(241,241,246,.84);stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
 .car-svg .car-body path,.car-svg .car-body circle{fill:none;stroke:inherit;stroke-width:inherit;stroke-linecap:inherit;stroke-linejoin:inherit;vector-effect:non-scaling-stroke}
-.car-svg .accent-line{stroke:rgba(225,29,46,.82)!important;stroke-width:1.6!important}
+.car-svg .accent-line{stroke:rgba(225,29,46,.86)!important;stroke-width:1.45!important}
 .hotspot{position:absolute;width:34px;height:34px;border:1px solid rgba(225,29,46,.75);border-radius:50%;display:grid;place-items:center;background:#101014;color:#fff;font-family:"Oswald",sans-serif;font-size:10px;cursor:pointer;z-index:3;transition:.22s;box-shadow:0 0 0 0 rgba(225,29,46,.25)}
 .hotspot:before{content:"";position:absolute;inset:-7px;border:1px solid rgba(225,29,46,.16);border-radius:50%}
 .hotspot:hover,.hotspot.active{background:var(--red);border-color:var(--red);transform:scale(1.08);box-shadow:0 0 0 8px rgba(225,29,46,.08),0 0 24px rgba(225,29,46,.25)}
-.hotspot[data-service="engine"]{left:46.5%;top:31%}
-.hotspot[data-service="brakes"]{left:19%;top:64%}
-.hotspot[data-service="tires"]{right:16%;top:63%}
-.hotspot[data-service="battery"]{right:29%;top:34%}
-.hotspot[data-service="cooling"]{left:34%;top:44%}
+.hotspot[data-service="engine"]{left:40%;top:38%}
+.hotspot[data-service="brakes"]{left:22%;top:66%}
+.hotspot[data-service="tires"]{right:22%;top:66%}
+.hotspot[data-service="battery"]{right:30%;top:40%}
+.hotspot[data-service="cooling"]{left:29%;top:47%}
 .hotspot-label{position:absolute;z-index:2;color:#73737b;font-family:"Oswald",sans-serif;font-size:9px;letter-spacing:.09em;text-transform:uppercase;pointer-events:none}
-.hotspot-label.engine{left:51%;top:29%}.hotspot-label.brakes{left:10%;top:72%}.hotspot-label.tires{right:7%;top:72%}.hotspot-label.battery{right:17%;top:31%}.hotspot-label.cooling{left:22%;top:43%}
+.hotspot-label.engine{left:44%;top:34%}.hotspot-label.brakes{left:10%;top:75%}.hotspot-label.tires{right:8%;top:75%}.hotspot-label.battery{right:17%;top:35%}.hotspot-label.cooling{left:18%;top:45%}
 
 /* subtle polish only */
 .service-card{isolation:isolate}
@@ -51,5 +51,5 @@
 .button:hover:before{transform:translateX(125%)}
 
 @media(max-width:980px){.diagnostic-shell{grid-template-columns:1fr}.car-console{min-height:390px}.diagnostic-intro>p{max-width:none}}
-@media(max-width:620px){.vehicle-diagnostic{padding:72px 20px}.car-console{min-height:330px}.car-svg{inset:58px 18px 42px;width:calc(100% - 36px);height:calc(100% - 100px)}.hotspot{width:30px;height:30px}.hotspot-label{display:none}.ticker-track{animation-duration:28s}.diagnostic-intro h2{font-size:40px}}
+@media(max-width:620px){.vehicle-diagnostic{padding:72px 20px}.car-console{min-height:330px}.car-svg{inset:58px 10px 40px;width:calc(100% - 20px);height:calc(100% - 98px)}.hotspot{width:30px;height:30px}.hotspot-label{display:none}.ticker-track{animation-duration:28s}.diagnostic-intro h2{font-size:40px}}
 @media(prefers-reduced-motion:reduce){.ticker-track,.car-scan{animation:none}.service-card:after,.button:before{display:none}}
