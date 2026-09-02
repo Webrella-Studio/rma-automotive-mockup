@@ -141,13 +141,22 @@
 
         <div class="car-console reveal" aria-label="Interactive car service selector">
           <div class="car-scan" aria-hidden="true"></div>
-          <svg class="car-svg" viewBox="0 0 640 310" aria-hidden="true">
-            <path d="M114 214h412l-18-67-63-58c-18-17-42-27-67-27H257c-28 0-54 12-72 33l-49 56-22 63Z"/>
-            <path d="M171 151h292l-55-48c-12-10-27-16-43-16H265c-17 0-33 7-44 20l-50 44Z"/>
-            <path d="M137 214c0 30 24 54 54 54s54-24 54-54M395 214c0 30 24 54 54 54s54-24 54-54"/>
-            <circle cx="191" cy="214" r="31"/><circle cx="449" cy="214" r="31"/>
-            <line x1="320" y1="87" x2="320" y2="214"/><line x1="221" y1="107" x2="185" y2="151"/><line x1="408" y1="103" x2="456" y2="151"/>
-            <path class="accent" d="M116 192h59M469 192h56M260 176h120"/>
+          <svg class="car-svg" viewBox="0 0 800 360" aria-hidden="true">
+            <g class="car-body">
+              <path d="M135 232 L165 162 C178 133 207 113 240 108 L325 95 C370 88 430 88 475 95 L560 108 C592 113 618 132 636 158 L690 232 L665 232 C662 264 637 289 605 289 C573 289 548 264 545 232 L255 232 C252 264 227 289 195 289 C163 289 138 264 135 232 Z"/>
+              <path d="M232 144 L321 128 C363 121 435 121 477 128 L554 141 C572 144 586 154 596 168 L620 201 L204 201 L224 169 C228 161 234 148 232 144 Z"/>
+              <path d="M321 128 L314 201"/>
+              <path d="M489 130 L509 201"/>
+              <path d="M398 123 L398 232"/>
+              <path d="M204 201 L620 201"/>
+              <path class="accent-line" d="M267 175 L530 175"/>
+              <path class="accent-line" d="M171 230 L138 230"/>
+              <path class="accent-line" d="M659 230 L627 230"/>
+              <circle cx="195" cy="232" r="42"/>
+              <circle cx="195" cy="232" r="21"/>
+              <circle cx="605" cy="232" r="42"/>
+              <circle cx="605" cy="232" r="21"/>
+            </g>
           </svg>
           <button class="hotspot active" type="button" data-service="engine" aria-label="Engine and diagnostics">1</button><span class="hotspot-label engine">Engine</span>
           <button class="hotspot" type="button" data-service="brakes" aria-label="Brake service">2</button><span class="hotspot-label brakes">Brakes</span>
