@@ -1,40 +1,78 @@
 const menuButton = document.querySelector('.menu-button');
-const nav = document.querySelector('.desktop-nav');
+const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
 
-if (menuButton && nav) {
-  menuButton.addEventListener('click', () => {
-    const open = nav.classList.toggle('open');
-    menuButton.setAttribute('aria-expanded', String(open));
-    document.body.classList.toggle('menu-open', open);
-  });
+menuButton?.addEventListener('click', () => {
+  document.body.classList.toggle('menu-open');
+  const expanded = document.body.classList.contains('menu-open');
+  menuButton.setAttribute('aria-expanded', String(expanded));
+});
 
-  nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-    nav.classList.remove('open');
-    menuButton.setAttribute('aria-expanded', 'false');
+mobileNavLinks.forEach(link => {
+  link.addEventListener('click', () => {
     document.body.classList.remove('menu-open');
-  }));
+    menuButton?.setAttribute('aria-expanded', 'false');
+  });
+});
+
+const heroSlides = document.querySelectorAll('.hero-slide');
+const heroDots = document.querySelectorAll('.hero-dot');
+const prevBtn = document.querySelector('.hero-prev');
+const nextBtn = document.querySelector('.hero-next');
+let currentHeroSlide = 0;
+let heroInterval;
+
+function showHeroSlide(index) {
+  heroSlides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+  heroDots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+  currentHeroSlide = index;
 }
 
-const revealItems = document.querySelectorAll('.reveal');
-if ('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12 });
-  revealItems.forEach(item => observer.observe(item));
-} else {
-  revealItems.forEach(item => item.classList.add('visible'));
+function nextHeroSlide() {
+  const next = (currentHeroSlide + 1) % heroSlides.length;
+  showHeroSlide(next);
 }
+
+function prevHeroSlide() {
+  const prev = (currentHeroSlide - 1 + heroSlides.length) % heroSlides.length;
+  showHeroSlide(prev);
+}
+
+function startHeroSlider() {
+  if (heroSlides.length > 1) heroInterval = setInterval(nextHeroSlide, 5000);
+}
+
+function resetHeroSlider() {
+  clearInterval(heroInterval);
+  startHeroSlider();
+}
+
+if (heroSlides.length) {
+  startHeroSlider();
+  nextBtn?.addEventListener('click', () => { nextHeroSlide(); resetHeroSlider(); });
+  prevBtn?.addEventListener('click', () => { prevHeroSlide(); resetHeroSlider(); });
+  heroDots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      showHeroSlide(Number(dot.dataset.target));
+      resetHeroSlider();
+    });
+  });
+}
+
+const reveals = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in-view');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+revealObserver && reveals.forEach(el => revealObserver.observe(el));
 
 const bookingForm = document.getElementById('booking-form');
 const formStatus = document.getElementById('form-status');
-bookingForm?.addEventListener('submit', event => {
+bookingForm?.addEventListener('submit', (event) => {
   event.preventDefault();
-  if (formStatus) {
-    formStatus.textContent = 'Concept request received — a production website would send this securely to the RMA Automotive team and trigger confirmation by SMS or email.';
-  }
+  formStatus.textContent = 'Concept submission captured. A production version could send this to the RMA Automotive team instantly.';
+  bookingForm.reset();
 });
