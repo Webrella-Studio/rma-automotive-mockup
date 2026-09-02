@@ -9,13 +9,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .brand-logo{width:78px;height:auto;flex:0 0 auto}
+    .footer-rma-logo{width:145px;height:auto;margin-bottom:14px;filter:brightness(0) invert(1)}
+    .footer-automotive-title{display:block;font-family:"Instrument Serif",serif;font-size:26px;font-weight:400;letter-spacing:-.02em}
+    @media(max-width:640px){.brand-logo{width:66px}}
+  </style>
 </head>
 <body>
   <div class="concept-bar"><span class="pulse"></span> Webrella concept mockup · not an official RMA website</div>
 
   <header class="site-header" id="top">
     <a class="brand" href="#top" aria-label="RMA Automotive Center home">
-      <span class="brand-mark">RMA</span>
+      <img class="brand-logo" src="assets/rma-logo.svg" alt="RMA Worldwide">
       <span class="brand-copy"><strong>Automotive Center</strong><small>Rockville, Maryland</small></span>
     </a>
     <nav class="desktop-nav" aria-label="Main navigation">
@@ -112,7 +118,7 @@
   </main>
 
   <footer>
-    <div class="footer-main"><div class="footer-brand"><strong>RMA <em>Automotive</em></strong><p>Concept for a dedicated digital home for RMA's automotive operation in Rockville.</p></div><div><h3>Services</h3><a href="#services">Oil &amp; Fluids</a><a href="#services">Brakes</a><a href="#services">MD Inspection</a><a href="#services">Diagnostics</a><a href="#services">Tires</a></div><div><h3>Company</h3><a href="#fleet">Fleet Programs</a><a href="#why">Why RMA</a><a href="#location">Location</a><a href="https://rmalimo.com" target="_blank" rel="noopener">rmalimo.com ↗</a></div></div>
+    <div class="footer-main"><div class="footer-brand"><img class="footer-rma-logo" src="assets/rma-logo.svg" alt="RMA Worldwide"><span class="footer-automotive-title">Automotive Center</span><p>Concept for a dedicated digital home for RMA's automotive operation in Rockville.</p></div><div><h3>Services</h3><a href="#services">Oil &amp; Fluids</a><a href="#services">Brakes</a><a href="#services">MD Inspection</a><a href="#services">Diagnostics</a><a href="#services">Tires</a></div><div><h3>Company</h3><a href="#fleet">Fleet Programs</a><a href="#why">Why RMA</a><a href="#location">Location</a><a href="https://rmalimo.com" target="_blank" rel="noopener">rmalimo.com ↗</a></div></div>
     <div class="footer-note"><span>Concept design by Webrella Studio</span><span>Not affiliated with BP p.l.c. · BP references are location context only.</span></div>
   </footer>
 
