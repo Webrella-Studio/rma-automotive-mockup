@@ -86,3 +86,38 @@ if(footerLogoPlate && footerLogo){
   footerLogo.style.width='145px';
   footerLogo.style.height='auto';
 }
+
+// Use the direct RMA BP Automotive shop number everywhere on the page.
+const automotivePhone='3018818646';
+const automotivePhoneDisplay='(301) 881-8646';
+document.querySelectorAll('a[href^="tel:"]').forEach(link=>{
+  link.href=`tel:${automotivePhone}`;
+  const strong=link.querySelector('strong');
+  if(strong){
+    strong.textContent=automotivePhoneDisplay;
+  }else{
+    link.textContent=automotivePhoneDisplay;
+  }
+});
+
+// Replace the decorative world map with a live map centered on the actual Rockville shop address.
+const mapCard=document.querySelector('.map-card');
+const oldMapImage=mapCard?.querySelector('img');
+if(mapCard && oldMapImage){
+  const mapFrame=document.createElement('iframe');
+  mapFrame.className='map-embed';
+  mapFrame.title='Map showing RMA BP Automotive Service Center at 1910 Rockville Pike, Rockville, Maryland';
+  mapFrame.src='https://www.google.com/maps?q=1910%20Rockville%20Pike%2C%20Rockville%2C%20MD%2020852&z=16&output=embed';
+  mapFrame.loading='lazy';
+  mapFrame.referrerPolicy='no-referrer-when-downgrade';
+  mapFrame.setAttribute('allowfullscreen','');
+  oldMapImage.replaceWith(mapFrame);
+
+  const mapStyle=document.createElement('style');
+  mapStyle.textContent=`
+    .map-card .map-embed{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(1) brightness(.62) contrast(1.12)}
+    .map-card:after{pointer-events:none}
+    .map-card:hover .map-embed{filter:grayscale(.65) brightness(.72) contrast(1.08)}
+  `;
+  document.head.appendChild(mapStyle);
+}
