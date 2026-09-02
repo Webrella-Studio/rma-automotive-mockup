@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="fixes.css">
+  <link rel="stylesheet" href="webrella.css">
 </head>
 <body>
   <div class="concept-bar">
@@ -117,6 +118,46 @@
       </div>
     </section>
 
+    <div class="service-ticker" aria-label="Automotive services">
+      <div class="ticker-track" aria-hidden="true">
+        <span>Engine diagnostics</span><span>Brake service</span><span>Oil changes</span><span>Tire service</span><span>Cooling &amp; A/C</span><span>Steering &amp; suspension</span><span>Electrical service</span>
+        <span>Engine diagnostics</span><span>Brake service</span><span>Oil changes</span><span>Tire service</span><span>Cooling &amp; A/C</span><span>Steering &amp; suspension</span><span>Electrical service</span>
+      </div>
+    </div>
+
+    <section class="vehicle-diagnostic" id="vehicle-check">
+      <div class="diagnostic-shell">
+        <div class="diagnostic-intro reveal">
+          <p class="eyebrow">Quick vehicle check</p>
+          <h2>What is your car<br><em>telling you?</em></h2>
+          <p>Select an area on the vehicle to see the type of service RMA BP can help with. It is a simple way to turn a symptom into the right next step.</p>
+          <div class="diagnostic-status" aria-live="polite">
+            <small>Selected service</small>
+            <strong id="diagnostic-title">Engine &amp; Diagnostics</strong>
+            <p id="diagnostic-copy">Warning lights, rough running, starting issues, electrical faults and other symptoms can be checked through RMA BP diagnostic service.</p>
+          </div>
+          <a class="button button-red diagnostic-cta" id="diagnostic-action" href="#book">Choose this service <span>›</span></a>
+        </div>
+
+        <div class="car-console reveal" aria-label="Interactive car service selector">
+          <div class="car-scan" aria-hidden="true"></div>
+          <svg class="car-svg" viewBox="0 0 640 310" aria-hidden="true">
+            <path d="M114 214h412l-18-67-63-58c-18-17-42-27-67-27H257c-28 0-54 12-72 33l-49 56-22 63Z"/>
+            <path d="M171 151h292l-55-48c-12-10-27-16-43-16H265c-17 0-33 7-44 20l-50 44Z"/>
+            <path d="M137 214c0 30 24 54 54 54s54-24 54-54M395 214c0 30 24 54 54 54s54-24 54-54"/>
+            <circle cx="191" cy="214" r="31"/><circle cx="449" cy="214" r="31"/>
+            <line x1="320" y1="87" x2="320" y2="214"/><line x1="221" y1="107" x2="185" y2="151"/><line x1="408" y1="103" x2="456" y2="151"/>
+            <path class="accent" d="M116 192h59M469 192h56M260 176h120"/>
+          </svg>
+          <button class="hotspot active" type="button" data-service="engine" aria-label="Engine and diagnostics">1</button><span class="hotspot-label engine">Engine</span>
+          <button class="hotspot" type="button" data-service="brakes" aria-label="Brake service">2</button><span class="hotspot-label brakes">Brakes</span>
+          <button class="hotspot" type="button" data-service="tires" aria-label="Tire service">3</button><span class="hotspot-label tires">Tires</span>
+          <button class="hotspot" type="button" data-service="battery" aria-label="Battery and electrical service">4</button><span class="hotspot-label battery">Electrical</span>
+          <button class="hotspot" type="button" data-service="cooling" aria-label="Cooling and air conditioning service">5</button><span class="hotspot-label cooling">Cooling / A/C</span>
+        </div>
+      </div>
+    </section>
+
     <section class="stats-strip reveal" aria-label="RMA BP highlights">
       <article><div class="stat-icon">▣</div><div><strong>Full Service</strong><span>Automotive repair</span></div></article>
       <article><div class="stat-icon">✓</div><div><strong>100%</strong><span>Work guarantee</span></div></article>
@@ -169,5 +210,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="webrella.js"></script>
 </body>
 </html>
