@@ -7,29 +7,35 @@
   <title>RMA BP Automotive | Rockville, MD</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="concept-bar"><span class="pulse"></span> Webrella concept mockup · not an official RMA website</div>
+  <div class="concept-bar">
+    <span class="concept-note">Webrella concept mockup · not an official RMA website</span>
+    <span class="utility-message">Reliable repairs. Honest service. Keeping your vehicle moving.</span>
+    <a href="tel:3012316555">Need service now? <strong>(301) 231-6555</strong></a>
+  </div>
 
   <header class="site-header" id="top">
     <a class="brand" href="#top" aria-label="RMA BP Automotive home">
-      <img class="brand-logo" src="assets/rma-logo.svg" alt="RMA Worldwide">
-      <span class="brand-copy"><strong>RMA BP Automotive</strong><small>1910 Rockville Pike · Rockville, MD</small></span>
+      <img class="brand-logo" src="assets/rma-logo-white.svg" alt="RMA Worldwide">
     </a>
     <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="#services">Services</a><a href="#fleet">Fleet</a><a href="#about">About</a><a href="#location">Location</a>
+      <a class="active" href="#top">Home</a>
+      <a href="#services">Services</a>
+      <a href="#fleet">Fleet Solutions</a>
+      <a href="#about">About Us</a>
+      <a href="#location">Contact</a>
     </nav>
     <div class="header-actions">
-      <a class="phone-link" href="tel:3012316555">(301) 231-6555</a>
-      <a class="button button-red" href="#book">Book now</a>
+      <a class="button button-red" href="#book">Request service <span>›</span></a>
       <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
     </div>
   </header>
 
   <div class="mobile-nav" aria-label="Mobile navigation">
-    <a href="#services">Services</a><a href="#fleet">Fleet Repairs</a><a href="#about">About Us</a><a href="#location">Location</a><a class="button button-dark mobile-nav-button" href="#book">Book Appointment</a>
+    <a href="#top">Home</a><a href="#services">Services</a><a href="#fleet">Fleet Solutions</a><a href="#about">About Us</a><a href="#location">Contact</a><a class="button button-red" href="#book">Request Service</a>
   </div>
 
   <main>
@@ -38,88 +44,143 @@
         <article class="hero-slide active" data-slide="0">
           <img class="hero-media" src="https://images.repairpal.com/upy44tkic80ac1pdh091u8nt3i48" alt="Gas station mechanic shop with open automotive service bays">
           <div class="hero-overlay"></div>
-          <div class="hero-grid-lines" aria-hidden="true"></div>
           <div class="hero-inner">
             <div class="hero-copy reveal">
-              <p class="hero-kicker"><span></span> RMA BP Automotive · Rockville, Maryland</p>
-              <h1>Quality auto care.<br><em>Built around</em><br>your uptime.</h1>
-              <p class="hero-summary">Professional automotive repair for foreign and domestic vehicles with a focus on dependable work and quick turnaround.</p>
-              <div class="hero-actions-row"><a class="button button-white" href="#book">Request service ↗</a><a class="button button-ghost" href="#services">View services</a></div>
-              <div class="hero-stats"><div><strong>Fleet</strong><span>Repair specialists</span></div><div><strong>Foreign + Domestic</strong><span>Wide service range</span></div><div><strong>100%</strong><span>Work guarantee</span></div></div>
+              <p class="hero-kicker">RMA BP Automotive</p>
+              <h1>Repairs you can trust.<br>Service that keeps you <em>moving.</em></h1>
+              <p class="hero-summary">Fast, reliable and professional automotive repair for foreign and domestic vehicles — with fleet service built around quick turnaround.</p>
+              <div class="hero-actions-row">
+                <a class="button button-red" href="#services">Our services <span>›</span></a>
+                <a class="button button-outline" href="#book">Request service <span>›</span></a>
+              </div>
             </div>
           </div>
         </article>
 
         <article class="hero-slide" data-slide="1">
-          <img class="hero-media" src="https://images.pexels.com/photos/8985517/pexels-photo-8985517.jpeg?auto=compress&cs=tinysrgb&w=2200" alt="Mechanic working with an engine inside a neighborhood automotive service garage">
-          <div class="hero-overlay"></div><div class="hero-grid-lines" aria-hidden="true"></div>
-          <div class="hero-inner two-column">
-            <div class="hero-copy reveal"><p class="hero-kicker"><span></span> Hands-on expertise</p><h1>Real service.<br><em>Real shop work.</em><br>Done right.</h1><p class="hero-summary">From diagnostics to maintenance and repairs, RMA BP is built around practical automotive expertise and dependable service.</p><div class="hero-actions-row"><a class="button button-white" href="#services">Explore services ↗</a><a class="button button-ghost" href="#about">Why RMA BP</a></div></div>
-            <aside class="hero-side-card reveal"><small>Service philosophy</small><strong>Inspect. Diagnose.<br>Repair with purpose.</strong><span>A cleaner, more focused experience for drivers who want their vehicle taken care of professionally.</span></aside>
+          <img class="hero-media" src="https://images.pexels.com/photos/8985517/pexels-photo-8985517.jpeg?auto=compress&cs=tinysrgb&w=2200" alt="Mechanic working on a vehicle inside an automotive service garage">
+          <div class="hero-overlay"></div>
+          <div class="hero-inner">
+            <div class="hero-copy reveal">
+              <p class="hero-kicker">Professional automotive service</p>
+              <h1>One shop.<br>Complete vehicle <em>care.</em></h1>
+              <p class="hero-summary">Maintenance, diagnostics, brakes, cooling, electrical work, tires, steering and suspension — all in one practical service center.</p>
+              <div class="hero-actions-row"><a class="button button-red" href="#services">Explore services <span>›</span></a><a class="button button-outline" href="#about">Why RMA BP <span>›</span></a></div>
+            </div>
           </div>
         </article>
 
         <article class="hero-slide" data-slide="2">
-          <img class="hero-media" src="https://images.pexels.com/photos/8985514/pexels-photo-8985514.jpeg?auto=compress&cs=tinysrgb&w=2200" alt="Vehicle raised on a lift inside an automotive service bay">
-          <div class="hero-overlay"></div><div class="hero-grid-lines" aria-hidden="true"></div>
-          <div class="hero-inner two-column">
-            <div class="hero-copy reveal"><p class="hero-kicker"><span></span> Fleet repair specialists</p><h1>Less downtime.<br><em>More road time.</em></h1><p class="hero-summary">Fleet customers depend on turnaround. RMA BP understands the pressure of keeping business vehicles moving.</p><div class="hero-actions-row"><a class="button button-white" href="#fleet">Fleet services ↗</a><a class="button button-ghost" href="#book">Request service</a></div></div>
-            <aside class="hero-side-card reveal"><small>Fleet-first mindset</small><strong>Service faster.<br>Move sooner.</strong><span>Maintenance and repair support designed around the reality of vehicles that need to stay productive.</span></aside>
+          <img class="hero-media" src="https://images.pexels.com/photos/8985514/pexels-photo-8985514.jpeg?auto=compress&cs=tinysrgb&w=2200" alt="Vehicle raised on a lift in an automotive service bay">
+          <div class="hero-overlay"></div>
+          <div class="hero-inner">
+            <div class="hero-copy reveal">
+              <p class="hero-kicker">Fleet repair specialists</p>
+              <h1>Less downtime.<br>More road <em>time.</em></h1>
+              <p class="hero-summary">RMA BP understands that fleet vehicles need to get serviced and get moving again. The site now puts that advantage front and center.</p>
+              <div class="hero-actions-row"><a class="button button-red" href="#fleet">Fleet solutions <span>›</span></a><a class="button button-outline" href="#book">Request service <span>›</span></a></div>
+            </div>
           </div>
         </article>
       </div>
-      <div class="hero-controls" aria-label="Hero slideshow controls"><button class="hero-arrow hero-prev" type="button" aria-label="Previous slide">←</button><div class="hero-dots"><button class="hero-dot active" data-target="0" aria-label="Slide 1"></button><button class="hero-dot" data-target="1" aria-label="Slide 2"></button><button class="hero-dot" data-target="2" aria-label="Slide 3"></button></div><button class="hero-arrow hero-next" type="button" aria-label="Next slide">→</button></div>
-      <div class="scroll-cue"><span>Scroll to explore</span><i></i></div>
-    </section>
 
-    <section class="trust-strip"><span>◆ Fleet repair specialists</span><i></i><span>Foreign &amp; domestic vehicles</span><i></i><span>100% work guarantee</span><i></i><span class="fuel-dot"><b></b> 1910 Rockville Pike · Rockville, MD</span></section>
-
-    <section class="services section" id="services">
-      <div class="section-heading reveal"><div><p class="eyebrow">Automotive services</p><h2>Everything your vehicle needs.<br><em>Under one roof.</em></h2></div><p>Routine maintenance, diagnostics, brakes, cooling, tires, steering and suspension — presented in a cleaner, more premium service experience.</p></div>
-      <div class="service-grid">
-        <article class="service-card reveal"><span class="service-number">01</span><div class="service-icon">◉</div><h3>Oil Change &amp; Maintenance</h3><p>Routine service that helps keep vehicles dependable, efficient and ready for the road.</p><small>ROUTINE CARE</small></article>
-        <article class="service-card reveal"><span class="service-number">02</span><div class="service-icon">⌁</div><h3>Diagnostics &amp; Electrical</h3><p>Engine controls, electrical service, batteries, alternators, starters and ignition-related diagnostics.</p><small>DIAGNOSTICS</small></article>
-        <article class="service-card reveal"><span class="service-number">03</span><div class="service-icon">◎</div><h3>Brakes &amp; Rotors</h3><p>Brake pads, rotors and safety-focused brake service for everyday and fleet vehicles.</p><small>BRAKE SERVICE</small></article>
-        <article class="service-card reveal"><span class="service-number">04</span><div class="service-icon">❄</div><h3>Cooling &amp; Air Conditioning</h3><p>AC, cooling-system, radiator and hose service to keep cabin and engine temperatures under control.</p><small>HEATING + COOLING</small></article>
-        <article class="service-card reveal"><span class="service-number">05</span><div class="service-icon">◌</div><h3>Tires</h3><p>Tire service paired with broader safety and maintenance checks for daily drivers and fleets.</p><small>TIRE SERVICE</small></article>
-        <article class="service-card reveal"><span class="service-number">06</span><div class="service-icon">◇</div><h3>Steering &amp; Suspension</h3><p>Steering, suspension, shocks, struts, axles and related repairs for confident handling.</p><small>RIDE + HANDLING</small></article>
+      <div class="hero-controls" aria-label="Hero slideshow controls">
+        <button class="hero-arrow hero-prev" type="button" aria-label="Previous slide">‹</button>
+        <div class="hero-dots"><button class="hero-dot active" data-target="0" aria-label="Slide 1"></button><button class="hero-dot" data-target="1" aria-label="Slide 2"></button><button class="hero-dot" data-target="2" aria-label="Slide 3"></button></div>
+        <button class="hero-arrow hero-next" type="button" aria-label="Next slide">›</button>
       </div>
     </section>
 
-    <section class="diagnostic-band reveal">
-      <div class="diagnostic-copy"><p class="eyebrow">The Webrella touch</p><h2>Built to feel like a real automotive brand — not a template.</h2></div>
-      <div class="diagnostic-meter"><span>Service readiness</span><div><i></i></div><strong>RMA / 100</strong></div>
+    <section class="feature-strip" aria-label="RMA BP service advantages">
+      <article><div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"/><path d="M4.9 4.9 7 7M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></div><div><strong>Expert Service</strong><span>Professional care for everyday and fleet vehicles.</span></div></article>
+      <article><div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 6v6l4 2"/><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M17 2v4h4"/></svg></div><div><strong>Fast Turnaround</strong><span>Built around getting vehicles back on the road.</span></div></article>
+      <article><div class="feature-icon"><svg viewBox="0 0 24 24"><path d="m12 3 7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3Z"/><path d="m9 12 2 2 4-4"/></svg></div><div><strong>Work Guaranteed</strong><span>RMA BP states that its work is guaranteed 100%.</span></div></article>
+      <article><div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M15 9.5c0-1.3-1.3-2.2-3-2.2S9 8.2 9 9.5s1.1 2 3 2.5 3 1.2 3 2.5-1.3 2.2-3 2.2-3-.9-3-2.2"/></svg></div><div><strong>Clear Service</strong><span>Simple requests, direct contact and practical information.</span></div></article>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="services-layout">
+        <div class="section-intro reveal">
+          <p class="eyebrow">Our services</p>
+          <h2>Complete auto repair<br>under one roof.</h2>
+          <p>From routine maintenance to repair and diagnostics, RMA BP covers the services drivers and fleet customers need most.</p>
+          <a class="button button-red" href="#book">Request a service <span>›</span></a>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card reveal"><div class="service-icon"><svg viewBox="0 0 24 24"><path d="M6 8h12l2 3v7H4v-7l2-3Z"/><path d="M8 8V5h8v3M7 18v2M17 18v2M8 13h8"/></svg></div><h3>Engine &amp; Diagnostics</h3><p>Diagnostics, engine controls, electrical issues, batteries, starters and alternators.</p><a href="#book">→</a></article>
+          <article class="service-card reveal"><div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 4v5M12 15v5M4 12h5M15 12h5"/></svg></div><h3>Brake Service</h3><p>Brake pads, rotors and safety-focused brake maintenance for dependable stopping.</p><a href="#book">→</a></article>
+          <article class="service-card reveal"><div class="service-icon"><svg viewBox="0 0 24 24"><path d="M7 6h8l3 3v7H6V8l1-2Z"/><path d="M9 4h5M15 11h5M9 12c0 2 1 3 3 3"/></svg></div><h3>Oil &amp; Maintenance</h3><p>Routine oil changes and maintenance designed to keep vehicles reliable and efficient.</p><a href="#book">→</a></article>
+          <article class="service-card reveal"><div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><path d="M12 4v4M12 16v4M4 12h4M16 12h4"/></svg></div><h3>Tire Service</h3><p>Tire service and broader safety checks for everyday vehicles and fleet needs.</p><a href="#book">→</a></article>
+          <article class="service-card reveal"><div class="service-icon"><svg viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/><circle cx="7" cy="7" r="2"/><circle cx="17" cy="17" r="2"/></svg></div><h3>Suspension &amp; Cooling</h3><p>Steering, suspension, shocks, struts, cooling-system and air-conditioning service.</p><a href="#book">→</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-strip reveal" aria-label="RMA BP highlights">
+      <article><div class="stat-icon">▣</div><div><strong>Fleet</strong><span>Repair specialists</span></div></article>
+      <article><div class="stat-icon">✓</div><div><strong>100%</strong><span>Work guarantee</span></div></article>
+      <article><div class="stat-icon">◆</div><div><strong>Foreign + Domestic</strong><span>Vehicle service</span></div></article>
+      <article><div class="stat-icon">⌖</div><div><strong>Rockville</strong><span>1910 Rockville Pike</span></div></article>
     </section>
 
     <section class="fleet-section" id="fleet">
       <div class="fleet-inner">
-        <div class="fleet-copy reveal"><p class="fleet-tag">Fleet Repair Specialists</p><h2>We understand<br><em>quick turnaround time.</em></h2><p>Business vehicles cannot sit around waiting. This section turns RMA BP's fleet capability into a clear selling point with stronger visuals, faster scanning and a direct service CTA.</p><div class="fleet-features"><span>✓ Oil changes &amp; maintenance</span><span>✓ Diagnostics &amp; electrical</span><span>✓ Brakes &amp; rotors</span><span>✓ Cooling &amp; air conditioning</span><span>✓ Tires</span><span>✓ Steering &amp; suspension</span></div><a class="button button-white" href="#book">Request fleet service ↗</a></div>
-        <div class="fleet-image reveal tilt-card"><img src="https://images.pexels.com/photos/32152037/pexels-photo-32152037.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Mechanic working underneath a car in a compact repair shop service bay"><div class="fleet-fact"><small>RMA BP slogan</small><strong>Fleet repairs.<br>Quick turnaround.</strong></div><div class="image-badge">MECHANICAL / SERVICE / FLEET</div></div>
+        <div class="fleet-copy reveal">
+          <p class="eyebrow">Fleet solutions</p>
+          <h2>Quick turnaround<br><em>matters.</em></h2>
+          <p>RMA BP specializes in fleet repairs, making speed and dependable service a core part of the story. This section gives fleet customers an immediate reason to call.</p>
+          <div class="fleet-features"><span>✓ Preventive maintenance</span><span>✓ Diagnostics &amp; electrical</span><span>✓ Brakes &amp; rotors</span><span>✓ Tires &amp; suspension</span></div>
+          <a class="button button-red" href="#book">Request fleet service <span>›</span></a>
+        </div>
+        <div class="fleet-image tilt-card reveal">
+          <img src="https://images.pexels.com/photos/32152037/pexels-photo-32152037.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Mechanic servicing a vehicle in a compact repair shop">
+          <div class="fleet-label"><small>RMA BP Automotive</small><strong>Service faster.<br>Move sooner.</strong></div>
+        </div>
       </div>
     </section>
 
-    <section class="why section" id="about">
-      <div class="why-layout">
-        <div class="why-intro reveal"><p class="eyebrow">About RMA BP</p><h2>Professional service.<br><em>Personal attention.</em></h2><p>RMA BP is an Automotive Service Center at 1910 Rockville Pike in Rockville, Maryland. The concept focuses the website around trust, speed and useful automotive information instead of generic filler.</p></div>
-        <div class="why-list">
-          <article class="why-item reveal"><span>01</span><div><h3>Foreign &amp; Domestic Vehicles</h3><p>A broad service range makes RMA BP a practical one-stop shop for common automotive maintenance and repair.</p><div class="chips"><b>Foreign</b><b>Domestic</b><b>One-stop repair</b></div></div></article>
-          <article class="why-item reveal"><span>02</span><div><h3>Personalized &amp; Professional</h3><p>A service experience built around clear communication, dependable repairs and completing work on time.</p><div class="chips"><b>Professional</b><b>Personalized</b><b>Dependable</b></div></div></article>
-          <article class="why-item reveal"><span>03</span><div><h3>100% Work Guarantee</h3><p>A strong trust signal that deserves to be visible throughout the customer journey.</p><div class="chips"><b>100% guarantee</b><b>Quality service</b><b>Customer trust</b></div></div></article>
+    <section class="about section" id="about">
+      <div class="about-grid">
+        <div class="about-copy reveal"><p class="eyebrow">Why RMA BP</p><h2>A practical shop.<br>A stronger digital presence.</h2><p>RMA BP is an Automotive Service Center at 1910 Rockville Pike in Rockville, Maryland. The redesign keeps the experience focused on trust, repair capability, fleet service and a direct path to contact the shop.</p></div>
+        <div class="about-cards">
+          <article class="reveal"><span>01</span><h3>Foreign &amp; Domestic</h3><p>A broad range of automotive services for different vehicle types.</p></article>
+          <article class="reveal"><span>02</span><h3>Personalized Service</h3><p>Clear communication and professional care without making the site feel corporate or generic.</p></article>
+          <article class="reveal"><span>03</span><h3>100% Work Guarantee</h3><p>A strong trust signal brought forward visually instead of buried in copy.</p></article>
         </div>
       </div>
     </section>
 
     <section class="booking" id="book">
       <div class="booking-inner">
-        <div class="booking-copy reveal"><p class="booking-kicker"><span></span> Online service request · Webrella concept</p><h2>Tell the shop<br>what your vehicle needs.</h2><p>A dedicated automotive lead flow lets drivers and fleet customers request service without hunting for contact information.</p><div class="expect-card"><strong>Service categories</strong><span>✓ Routine maintenance</span><span>✓ Repair &amp; diagnostics</span><span>✓ Fleet service requests</span></div></div>
-        <form class="booking-form reveal" id="booking-form"><div class="form-head"><span>Service request</span><small>Concept form</small></div><label><span>Service needed</span><select name="service" required><option value="">Select a service</option><option>Oil Change &amp; Maintenance</option><option>Diagnostics &amp; Electrical</option><option>Brakes &amp; Rotors</option><option>Cooling &amp; Air Conditioning</option><option>Tires</option><option>Steering &amp; Suspension</option><option>Fleet Repair</option></select></label><div class="form-row"><label><span>Year</span><input name="year" placeholder="2022" required></label><label><span>Make</span><input name="make" placeholder="Toyota" required></label></div><label><span>Model</span><input name="model" placeholder="Camry / Sprinter / F-150" required></label><label><span>Preferred date</span><input type="date" name="date" required></label><div class="form-row"><label><span>Name</span><input name="name" required></label><label><span>Phone</span><input type="tel" name="phone" required></label></div><button class="button button-dark form-submit" type="submit">Request appointment ↗</button><p class="form-status" id="form-status" role="status"></p></form>
+        <div class="booking-copy reveal"><p class="eyebrow">Request service</p><h2>Tell us what your vehicle needs.</h2><p>A dedicated automotive lead flow gives drivers and fleet customers a fast way to request service.</p><div class="booking-points"><span>✓ Routine maintenance</span><span>✓ Repair &amp; diagnostics</span><span>✓ Fleet service requests</span></div></div>
+        <form class="booking-form reveal" id="booking-form">
+          <div class="form-head"><span>Service request</span><small>Concept form</small></div>
+          <label><span>Service needed</span><select name="service" required><option value="">Select a service</option><option>Oil Change &amp; Maintenance</option><option>Diagnostics &amp; Electrical</option><option>Brakes &amp; Rotors</option><option>Cooling &amp; Air Conditioning</option><option>Tires</option><option>Steering &amp; Suspension</option><option>Fleet Repair</option></select></label>
+          <div class="form-row"><label><span>Year</span><input name="year" placeholder="2022" required></label><label><span>Make</span><input name="make" placeholder="Toyota" required></label></div>
+          <label><span>Model</span><input name="model" placeholder="Camry / Sprinter / F-150" required></label>
+          <label><span>Preferred date</span><input type="date" name="date" required></label>
+          <div class="form-row"><label><span>Name</span><input name="name" required></label><label><span>Phone</span><input type="tel" name="phone" required></label></div>
+          <button class="button button-red form-submit" type="submit">Request appointment <span>›</span></button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
       </div>
     </section>
 
-    <section class="location section" id="location"><div class="location-grid"><div class="map-card reveal"><img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=1400" alt="Map inspired city background"><div class="map-label"><span>⌖</span><div><strong>RMA BP Automotive Service Center</strong><p>1910 Rockville Pike<br>Rockville, MD 20852</p><a href="https://maps.google.com/?q=1910+Rockville+Pike+Rockville+MD+20852" target="_blank" rel="noopener">Open in maps ↗</a></div></div></div><div class="location-info reveal"><p class="eyebrow">Location &amp; hours</p><h2>Visit RMA BP.</h2><div class="info-block"><span>Hours</span><div><p>Monday — Friday <strong>7:00 AM — 7:00 PM</strong></p><p>Saturday <strong>7:00 AM — 7:00 PM</strong></p></div></div><div class="info-block"><span>Call</span><a href="tel:3012316555">(301) 231-6555</a></div><a class="button button-red" href="#book">Request service</a></div></div></section>
+    <section class="location section" id="location">
+      <div class="location-grid">
+        <div class="map-card reveal"><img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=1400" alt="Map inspired city background"><div class="map-label"><span>⌖</span><div><strong>RMA BP Automotive Service Center</strong><p>1910 Rockville Pike<br>Rockville, MD 20852</p><a href="https://maps.google.com/?q=1910+Rockville+Pike+Rockville+MD+20852" target="_blank" rel="noopener">Open in maps →</a></div></div></div>
+        <div class="location-info reveal"><p class="eyebrow">Contact &amp; location</p><h2>Visit RMA BP.</h2><div class="info-block"><span>Hours</span><div><p>Monday — Friday <strong>7:00 AM — 7:00 PM</strong></p><p>Saturday <strong>7:00 AM — 7:00 PM</strong></p></div></div><div class="info-block"><span>Call</span><a href="tel:3012316555">(301) 231-6555</a></div><div class="info-block"><span>Address</span><p>1910 Rockville Pike<br>Rockville, MD 20852</p></div><a class="button button-red" href="#book">Request service <span>›</span></a></div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer"><div class="footer-brand"><div class="logo-plate"><img src="assets/rma-logo.svg" alt="RMA Worldwide"></div><div><strong>RMA BP Automotive</strong><span>Rockville, Maryland</span></div></div><p>Webrella Studio concept mockup for presentation purposes.</p><a href="#top">Back to top ↑</a></footer>
+  <footer class="site-footer">
+    <div class="footer-brand"><img src="assets/rma-logo-white.svg" alt="RMA Worldwide"><div><strong>RMA BP Automotive</strong><span>Rockville, Maryland</span></div></div>
+    <p>Webrella Studio concept mockup for presentation purposes.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
