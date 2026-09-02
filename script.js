@@ -129,7 +129,7 @@ if(aboutSection){
   aboutSection.innerHTML=`
     <div class="about-stage">
       <div class="about-visual" aria-label="RMA BP automotive service shop">
-        <img src="assets/hero-mechanic.jpg" alt="Automotive service technician working in a repair shop">
+        <img src="https://images.pexels.com/photos/8478254/pexels-photo-8478254.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Mechanic working on a car engine inside an automotive repair shop">
         <div class="about-visual-shade" aria-hidden="true"></div>
         <div class="about-guarantee">
           <span>RMA BP STANDARD</span>
