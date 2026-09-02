@@ -74,3 +74,15 @@ window.addEventListener('scroll',()=>{
     ticking=true;
   }
 });
+
+// Dark-footer logo treatment: preserve RMA red accents while turning the dark mark white.
+const footerLogoPlate=document.querySelector('.site-footer .logo-plate');
+const footerLogo=footerLogoPlate?.querySelector('img');
+if(footerLogoPlate && footerLogo){
+  footerLogo.src='assets/rma-logo-white.svg';
+  footerLogoPlate.style.background='transparent';
+  footerLogoPlate.style.padding='0';
+  footerLogoPlate.style.borderRadius='0';
+  footerLogo.style.width='145px';
+  footerLogo.style.height='auto';
+}
