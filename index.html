@@ -9,12 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    .brand-logo{width:78px;height:auto;flex:0 0 auto}
-    .footer-rma-logo{width:145px;height:auto;margin-bottom:14px;filter:brightness(0) invert(1)}
-    .footer-automotive-title{display:block;font-family:"Instrument Serif",serif;font-size:26px;font-weight:400;letter-spacing:-.02em}
-    @media(max-width:640px){.brand-logo{width:66px}}
-  </style>
 </head>
 <body>
   <div class="concept-bar"><span class="pulse"></span> Webrella concept mockup · not an official RMA website</div>
@@ -24,35 +18,108 @@
       <img class="brand-logo" src="assets/rma-logo.svg" alt="RMA Worldwide">
       <span class="brand-copy"><strong>Automotive Center</strong><small>Rockville, Maryland</small></span>
     </a>
+
     <nav class="desktop-nav" aria-label="Main navigation">
       <a href="#services">Services</a>
       <a href="#fleet">Fleet Services</a>
       <a href="#why">Why RMA</a>
       <a href="#location">Location</a>
     </nav>
+
     <div class="header-actions">
       <a class="phone-link" href="tel:3012316555">(301) 231-6555</a>
       <a class="button button-red" href="#book">Book now</a>
-      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
     </div>
   </header>
 
+  <div class="mobile-nav" aria-label="Mobile navigation">
+    <a href="#services">Services</a>
+    <a href="#fleet">Fleet Services</a>
+    <a href="#why">Why RMA</a>
+    <a href="#location">Location</a>
+    <a class="button button-dark mobile-nav-button" href="#book">Book Appointment</a>
+  </div>
+
   <main>
-    <section class="hero">
-      <div class="hero-bg"><img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=85&w=2200&auto=format&fit=crop" alt="Premium automotive service facility"></div>
-      <div class="hero-overlay"></div>
-      <div class="hero-inner">
-        <div class="hero-copy reveal">
-          <p class="hero-kicker"><span></span> Division of RMA Worldwide · 400+ vehicle fleet</p>
-          <h1>Rockville's<br><em>Fleet-Grade</em><br>Auto Care</h1>
-          <p class="hero-summary">The same certified techs maintaining 400+ luxury vehicles, motor coaches, and Baltimore &amp; Bethesda Circulators now service your car. <strong>At 1910 Rockville Pike.</strong></p>
-          <div class="hero-actions"><a class="button button-white" href="#book">Request service ↗</a><a class="button button-ghost" href="#services">View services</a></div>
-          <div class="hero-stats"><div><strong>400+</strong><span>Fleet vehicles</span></div><div><strong>Since 1988</strong><span>Serving Maryland</span></div><div><strong>7AM–7PM</strong><span>Mon–Sat service</span></div></div>
+    <section class="hero" id="hero">
+      <div class="hero-slides">
+        <article class="hero-slide active" data-slide="0">
+          <video class="hero-media" autoplay muted loop playsinline poster="assets/hero-mechanic.jpg">
+            <source src="assets/hero-automotive.mp4" type="video/mp4">
+          </video>
+          <div class="hero-overlay"></div>
+          <div class="hero-inner">
+            <div class="hero-copy reveal">
+              <p class="hero-kicker"><span></span> Division of RMA Worldwide · 400+ vehicle fleet</p>
+              <h1>Rockville's<br><em>Fleet-Grade</em><br>Auto Care</h1>
+              <p class="hero-summary">The same certified techs maintaining 400+ luxury vehicles, motor coaches, and circulator fleets now service your car. <strong>At 1910 Rockville Pike.</strong></p>
+              <div class="hero-actions-row">
+                <a class="button button-white" href="#book">Request service ↗</a>
+                <a class="button button-ghost" href="#services">View services</a>
+              </div>
+              <div class="hero-stats">
+                <div><strong>400+</strong><span>Fleet vehicles</span></div>
+                <div><strong>Since 1988</strong><span>Serving Maryland</span></div>
+                <div><strong>7AM–7PM</strong><span>Mon–Sat service</span></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="hero-slide" data-slide="1">
+          <img class="hero-media" src="assets/hero-mechanic.jpg" alt="Mechanic servicing a vehicle in the shop">
+          <div class="hero-overlay"></div>
+          <div class="hero-inner two-column">
+            <div class="hero-copy reveal">
+              <p class="hero-kicker"><span></span> Certified technicians · diagnostics · repair</p>
+              <h1>Real mechanics.<br><em>Real diagnostics.</em><br>Real service.</h1>
+              <p class="hero-summary">From inspections and synthetic oil services to engine diagnostics and brake work, RMA Automotive brings professional shop standards to personal vehicles.</p>
+              <div class="hero-actions-row">
+                <a class="button button-white" href="#services">Explore services ↗</a>
+                <a class="button button-ghost" href="#why">Why RMA</a>
+              </div>
+            </div>
+            <aside class="hero-side-card reveal">
+              <small>Live from the shop · concept</small>
+              <strong>MD State Inspection + Full Synthetic</strong>
+              <span>Black SUV in bay 2 · technician assigned</span>
+            </aside>
+          </div>
+        </article>
+
+        <article class="hero-slide" data-slide="2">
+          <img class="hero-media" src="assets/hero-fleet.jpg" alt="Fleet vehicles and service bays">
+          <div class="hero-overlay"></div>
+          <div class="hero-inner two-column">
+            <div class="hero-copy reveal">
+              <p class="hero-kicker"><span></span> Fleet maintenance programs · B2B support</p>
+              <h1>Fleet support that keeps<br><em>business moving.</em></h1>
+              <p class="hero-summary">Priority scheduling, business-ready billing, and maintenance support for vans, shuttles, and commercial vehicles — built around uptime.</p>
+              <div class="hero-actions-row">
+                <a class="button button-white" href="#fleet">Get fleet quote ↗</a>
+                <a class="button button-ghost" href="#location">Visit the shop</a>
+              </div>
+            </div>
+            <aside class="hero-side-card reveal">
+              <small>Fleet mindset</small>
+              <strong>Same standards.<br>Every vehicle.</strong>
+              <span>Sprinter vans · shuttle fleets · service records</span>
+            </aside>
+          </div>
+        </article>
+      </div>
+
+      <div class="hero-controls" aria-label="Hero slideshow controls">
+        <button class="hero-arrow hero-prev" type="button" aria-label="Previous slide">←</button>
+        <div class="hero-dots" role="tablist" aria-label="Hero slides">
+          <button class="hero-dot active" type="button" data-target="0" aria-label="Slide 1"></button>
+          <button class="hero-dot" type="button" data-target="1" aria-label="Slide 2"></button>
+          <button class="hero-dot" type="button" data-target="2" aria-label="Slide 3"></button>
         </div>
-        <div class="hero-card reveal">
-          <div class="hero-card-image"><img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=85&w=1100&auto=format&fit=crop" alt="Automotive technician at work"><span>Fleet-certified bay</span></div>
-          <div class="shop-update"><div><small>Live from the shop · concept</small><strong>MD State Inspection + Full Synthetic</strong><span>Sprinter 2500 fleet service</span></div><b>↗</b></div>
-        </div>
+        <button class="hero-arrow hero-next" type="button" aria-label="Next slide">→</button>
       </div>
     </section>
 
@@ -61,7 +128,13 @@
     </section>
 
     <section class="services section" id="services">
-      <div class="section-heading reveal"><div><p class="eyebrow">Complete care · fleet spec</p><h2>One shop.<br>Every service that matters.</h2></div><p>Built around the standards required to keep a professional fleet on the road — brought to personal vehicles and local business fleets.</p></div>
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">Complete care · fleet spec</p>
+          <h2>One shop.<br>Every service that matters.</h2>
+        </div>
+        <p>Built around the standards required to keep a professional fleet on the road — brought to personal vehicles and local business fleets.</p>
+      </div>
       <div class="service-grid">
         <article class="service-card reveal"><span class="service-number">01</span><div class="service-icon">◉</div><h3>Oil Change &amp; Fluids</h3><p>Full-synthetic, fleet-spec oil service with a 29-point inspection included.</p><small>45 MIN</small></article>
         <article class="service-card reveal"><span class="service-number">02</span><div class="service-icon">◎</div><h3>Brakes &amp; Rotors</h3><p>OEM-grade pads, rotor service, and ABS diagnostics with fleet-level attention.</p><small>MOST POPULAR</small></article>
@@ -74,7 +147,10 @@
 
     <section class="fleet-section" id="fleet">
       <div class="fleet-inner">
-        <div class="fleet-copy reveal"><p class="fleet-tag">B2B · Fleet Maintenance Programs</p><h2>We keep complex fleets<br><em>running on time.</em></h2><p>If RMA can maintain transit buses and professional transportation vehicles in daily service, the same systems can support local business fleets. Fleet accounts can be built around priority scheduling, digital service history, and centralized billing.</p>
+        <div class="fleet-copy reveal">
+          <p class="fleet-tag">B2B · Fleet Maintenance Programs</p>
+          <h2>We keep complex fleets<br><em>running on time.</em></h2>
+          <p>If RMA can maintain transit buses and professional transportation vehicles in daily service, the same systems can support local business fleets. Fleet accounts can be built around priority scheduling, digital service history, and centralized billing.</p>
           <div class="fleet-features"><span>✓ Sprinter / Transit / ProMaster vans</span><span>✓ Small business fleets</span><span>✓ DOT pre-trip support &amp; logs</span><span>✓ Priority bay coordination</span><span>✓ Monthly billing &amp; PO support</span><span>✓ MD State + DOT inspection support</span></div>
           <a class="button button-white" href="#book">Get fleet quote ↗</a>
         </div>
@@ -98,7 +174,7 @@
         <div class="booking-copy reveal"><p class="booking-kicker"><span></span> 24/7 online booking · concept</p><h2>Request a slot.<br>We'll confirm in minutes.</h2><p>No phone tag. Pick a service, vehicle, and preferred time. A production version could connect directly to real bay availability and SMS confirmations.</p><div class="expect-card"><strong>What to expect</strong><span>✓ Fast request confirmation</span><span>✓ Digital inspection report concept</span><span>✓ Customer lounge experience</span></div></div>
         <form class="booking-form reveal" id="booking-form">
           <div class="form-head"><span>Service request</span><small>Concept form</small></div>
-          <label><span>Service needed</span><select name="service" required><option value="">Select a service</option><option>Oil Change & Fluids</option><option>Brakes & Rotors</option><option>MD State Inspection</option><option>Diagnostics & Engine</option><option>Tires & Alignment</option><option>Foreign & Domestic Repair</option><option>Fleet Service</option></select></label>
+          <label><span>Service needed</span><select name="service" required><option value="">Select a service</option><option>Oil Change &amp; Fluids</option><option>Brakes &amp; Rotors</option><option>MD State Inspection</option><option>Diagnostics &amp; Engine</option><option>Tires &amp; Alignment</option><option>Foreign &amp; Domestic Repair</option><option>Fleet Service</option></select></label>
           <div class="form-row"><label><span>Year</span><input type="text" name="year" placeholder="2022" required></label><label><span>Make</span><input type="text" name="make" placeholder="Mercedes-Benz" required></label></div>
           <label><span>Model</span><input type="text" name="model" placeholder="Sprinter / C-Class / F-150" required></label>
           <label><span>Preferred date</span><input type="date" name="date" required></label>
@@ -118,7 +194,7 @@
   </main>
 
   <footer>
-    <div class="footer-main"><div class="footer-brand"><img class="footer-rma-logo" src="assets/rma-logo.svg" alt="RMA Worldwide"><span class="footer-automotive-title">Automotive Center</span><p>Concept for a dedicated digital home for RMA's automotive operation in Rockville.</p></div><div><h3>Services</h3><a href="#services">Oil &amp; Fluids</a><a href="#services">Brakes</a><a href="#services">MD Inspection</a><a href="#services">Diagnostics</a><a href="#services">Tires</a></div><div><h3>Company</h3><a href="#fleet">Fleet Programs</a><a href="#why">Why RMA</a><a href="#location">Location</a><a href="https://rmalimo.com" target="_blank" rel="noopener">rmalimo.com ↗</a></div></div>
+    <div class="footer-main"><div class="footer-brand"><img class="footer-logo" src="assets/rma-logo.svg" alt="RMA Worldwide"><strong>Automotive Center</strong><p>Concept for a dedicated digital home for RMA's automotive operation in Rockville.</p></div><div><h3>Services</h3><a href="#services">Oil &amp; Fluids</a><a href="#services">Brakes</a><a href="#services">MD Inspection</a><a href="#services">Diagnostics</a><a href="#services">Tires</a></div><div><h3>Company</h3><a href="#fleet">Fleet Programs</a><a href="#why">Why RMA</a><a href="#location">Location</a><a href="https://rmalimo.com" target="_blank" rel="noopener">rmalimo.com ↗</a></div></div>
     <div class="footer-note"><span>Concept design by Webrella Studio</span><span>Not affiliated with BP p.l.c. · BP references are location context only.</span></div>
   </footer>
 
